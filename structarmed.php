@@ -20,6 +20,7 @@ return Architecture::define()
         Psr4Preset::CLASSES_MUST_MATCH_COMPOSER => [
             __DIR__ . '/tests/system/Config/fixtures',
         ],
+        __DIR__ . '/system/ThirdParty',
     ])
     ->cacheDirectory(is_dir('/tmp') ? '/tmp/structarmed' : null)
     ->withPreset(Preset::PSR4());
